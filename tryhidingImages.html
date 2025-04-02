@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Government Policies and Schemes</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Arial, sans-serif;
+      }
+      body {
+         background: #e3f2fd;
+         padding: 20px;
+      }
+      h1 {
+         text-align: center;
+         margin-bottom: 30px;
+         color: #1e88e5;
+      }
+      .container {
+         max-width: 1200px;
+         margin: auto;
+         background: #fff;
+         padding: 30px;
+         border-radius: 10px;
+         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+      /* Two-column layout for policies */
+      .policies-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         grid-gap: 20px;
+      }
+      .policy {
+         background: #42a5f5;
+         color: #fff;
+         padding: 20px;
+         border-radius: 8px;
+         cursor: pointer;
+         transition: 0.3s;
+         position: relative;
+      }
+      .policy:hover {
+         background: #1e88e5;
+      }
+      .policy h2 {
+         font-size: 20px;
+         margin-bottom: 10px;
+      }
+      .toggle-icon {
+         position: absolute;
+         right: 20px;
+         top: 20px;
+         font-size: 24px;
+      }
+      .details {
+         display: none;
+         background: #e3f2fd;
+         color: #333;
+         padding: 15px;
+         border-radius: 5px;
+         margin-top: 10px;
+         text-align: left;
+      }
+      .details h3 {
+         margin-bottom: 5px;
+         color: #1e88e5;
+      }
+      .details p {
+         margin-bottom: 10px;
+         line-height: 1.6;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h1>GOVERNMENT POLICIES AND SCHEMES</h1>
+      <div class="policies-container">
+         <div class="policy" onclick="toggleDetails('policy1')">
+            <h2>Swachh Bharat Abhiyan</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy1" class="details">
+               <h3>Overview:</h3>
+               <p>This nationwide campaign is aimed at promoting cleanliness and effective waste management. Its primary focus is on public sanitation and environmental health.</p>
+               <h3>How to Benefit:</h3>
+               <p>Citizens should participate in community cleaning drives, adopt proper waste disposal methods, and support local initiatives in their cities.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy2')">
+            <h2>Plastic Waste Management Rules</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy2" class="details">
+               <h3>Overview:</h3>
+               <p>This policy aims to reduce plastic waste, promote recycling, and encourage eco-friendly alternatives.</p>
+               <h3>How to Benefit:</h3>
+               <p>Individuals should reduce their plastic usage, segregate waste, and choose products that come in environmentally friendly packaging.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy3')">
+            <h2>E-Waste Management Rules</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy3" class="details">
+               <h3>Overview:</h3>
+               <p>This scheme ensures the proper disposal and recycling of electronic waste so that harmful components do not damage the environment.</p>
+               <h3>How to Benefit:</h3>
+               <p>Consumers should use certified e-waste recyclers and responsibly dispose of or donate their old electronic items.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy4')">
+            <h2>National Bio-Energy Mission</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy4" class="details">
+               <h3>Overview:</h3>
+               <p>This initiative aims to convert agricultural and industrial waste into bio-energy, thereby reducing environmental impact.</p>
+               <h3>How to Benefit:</h3>
+               <p>Farmers and industries should participate in waste conversion projects to benefit from reduced energy costs and renewable energy advantages.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy5')">
+            <h2>GOBAR-Dhan Scheme</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy5" class="details">
+               <h3>Overview:</h3>
+               <p>This scheme supports converting cattle dung and organic waste into energy and manure, helping to reduce overall waste.</p>
+               <h3>How to Benefit:</h3>
+               <p>Farmers and local residents should engage in organic waste collection and utilize government facilities for this process.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy6')">
+            <h2>Extended Producer Responsibility (EPR)</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy6" class="details">
+               <h3>Overview:</h3>
+               <p>This policy holds manufacturers responsible for managing and recycling waste throughout the lifecycle of their products.</p>
+               <h3>How to Benefit:</h3>
+               <p>Consumers should choose products that comply with EPR norms, thereby promoting sustainable production practices.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy7')">
+            <h2>Green Skill Development Programme (GSDP)</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy7" class="details">
+               <h3>Overview:</h3>
+               <p>This program provides training in waste management, recycling, and sustainable practices, which leads to the creation of green jobs.</p>
+               <h3>How to Benefit:</h3>
+               <p>Individuals should invest in certified courses and training programs for skill development, which can help them secure employment in the sustainable sector.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy8')">
+            <h2>National Electric Mobility Mission Plan (NEMMP)</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy8" class="details">
+               <h3>Overview:</h3>
+               <p>This mission was launched to promote the use of electric vehicles and reduce carbon emissions.</p>
+               <h3>How to Benefit:</h3>
+               <p>Consumers can take advantage of EV subsidies and incentives, leading to long-term savings on fuel and maintenance costs.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy9')">
+            <h2>Unnat Jyoti by Affordable LEDs for All (UJALA)</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy9" class="details">
+               <h3>Overview:</h3>
+               <p>This scheme promotes energy-efficient LED lighting, which helps reduce both energy consumption and waste.</p>
+               <h3>How to Benefit:</h3>
+               <p>Households should use LED bulbs to save on electricity bills and contribute to environmental protection.</p>
+            </div>
+         </div>
+         <div class="policy" onclick="toggleDetails('policy10')">
+            <h2>National Adaptation Fund for Climate Change (NAFCC)</h2>
+            <span class="toggle-icon">+</span>
+            <div id="policy10" class="details">
+               <h3>Overview:</h3>
+               <p>This fund assists communities and businesses in implementing projects to combat the impacts of climate change.</p>
+               <h3>How to Benefit:</h3>
+               <p>Local communities and entrepreneurs can apply for grants to launch sustainable projects, contributing to environmental protection.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script>
+      function toggleDetails(id) {
+         var element = document.getElementById(id);
+         if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "block";
+         } else {
+            element.style.display = "none";
+         }
+      }
+   </script>
+</body>
+</html>

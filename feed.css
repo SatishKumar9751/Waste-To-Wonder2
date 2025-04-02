@@ -1,0 +1,150 @@
+body {
+    background: linear-gradient(to right, #f0f4f8, #c6e2ff);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #4a90e2;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    color: #5a5a5a;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.form-control:focus {
+    border-color: #5a9bd3;
+    box-shadow: 0 0 0 0.2rem rgba(90, 155, 211, 0.25);
+}
+
+.form-select {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-select:focus {
+    border-color: #5a9bd3;
+    box-shadow: 0 0 0 0.2rem rgba(90, 155, 211, 0.25);
+}
+
+.form-check-label {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.5);
+}
+
+.form-check-input:checked {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+.form-control::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+.mb-3 {
+    margin-bottom: 20px;
+}
+
+#name {
+    border-color: #ff6f61;
+}
+
+#name:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 0 0.2rem rgba(255, 111, 97, 0.25);
+}
+
+#email {
+    border-color: #6b5b95;
+}
+
+#email:focus {
+    border-color: #6b5b95;
+    box-shadow: 0 0 0 0.2rem rgba(107, 91, 149, 0.25);
+}
+
+#usability {
+    border-color: #88b04b;
+}
+
+#usability:focus {
+    border-color: #88b04b;
+    box-shadow: 0 0 0 0.2rem rgba(136, 176, 75, 0.25);
+}
+
+#content {
+    border-color: #f39c12;
+}
+
+#content:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.25);
+}
+
+#design {
+    border-color: #1abc9c;
+}
+
+#design:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+}
+
+#features {
+    border-color: #e74c3c;
+}
+
+#features:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25);
+}
+
+#bugs {
+    border-color: #3498db;
+}
+
+#bugs:focus {
+    border-color: #3498db;
+    box-shadow: 0

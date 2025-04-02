@@ -1,0 +1,81 @@
+
+
+.img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#ic1 {
+    position: absolute;
+    top: 0;
+    border: 5px solid rgba(236, 217, 94, 0.624);
+    border-radius:50% ;
+    height: 100px;
+    background-color: rgba(236, 217, 94, 0.624);;
+    left: 0;
+}
+
+#ic2 {
+    position: absolute;
+    top: 0;
+    border: 5px solid rgba(160, 156, 125, 0.806);
+    border-radius:50% ;
+    height: 100px;
+    right: 0;
+}
+
+.navbar{
+    background-color: rgb(47, 43, 43);
+    border-radius: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    padding: 0 0;
+
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgb(47, 43, 43);
+    border-radius: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    padding: 0;
+}
+
+.navbar ul {
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar li a {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navbar li a:hover {
+    background-color: rgb(88, 87, 87);
+    border-radius: 5px;
+}
+
+/* Category Heading Styling */
+#category-heading {
+    text-align: center; /* Center the text */
+    font-size: 2rem; /* Font size */
+    color: blue; /* Font color */
+    margin-top: 20px; /* Space below navbar 
+}
+*/

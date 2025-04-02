@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#ic1 {
+    position: absolute;
+    top: 0;
+    border: 5px solid rgba(236, 217, 94, 0.624);
+    border-radius:50% ;
+    height: 80px;
+    background-color: rgba(236, 217, 94, 0.624);
+    left: 0;
+}
+
+#ic2 {
+    position: absolute;
+    top: 0;
+    border: 5px solid rgba(160, 156, 125, 0.806);
+    border-radius:50% ;
+    height: 80px;
+    right: 0;
+}
+
+/*.navbar{
+    background-color: rgb(47, 43, 43);
+    border-radius: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.navbar ul{
+    overflow: auto;
+    display: flex;
+}
+
+.navbar ul li{
+    float:left;
+    padding: 10px 10px 10px 10px;
+    list-style:none;
+}
+
+.navbar li a{
+    padding:10px 70px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    background-color: rgb(88, 87, 87);
+    border-radius: 5px;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 2rem;
+}*/
+.navbar{
+    background-color: rgb(47, 43, 43);
+    border-radius: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+    margin: 10px auto;
+    width: 70%;
+    padding: 0 0;
+
+}
+
+.navbar ul{
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    float:left;
+    padding: 10px 1px 10px 1px;
+    list-style:none;
+}
+
+.navbar li a{
+    padding:10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.navbar li a:hover{
+    background-color: rgb(88, 87, 87);
+    border-radius: 5px;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+button {
+    background-color: rgb(69, 63, 178);
+    border: 1px solid rgb(166, 150, 150);
+    height: 40px;
+    width: 200px;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 1.9rem;
+    margin-left: 5px;
+}
+
+
+#read_article {
+    color: rgb(218, 157, 77);
+}
+
+.article1, .article2, .article3 {
+    height: 620px;
+    width: 1100px;
+    border: 1px solid black;
+    background-color: rgb(238, 240, 240);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin: 15px 5px 0 5px;
+}
+
+.read {
+    font-size: 1.2rem;
+    margin: 5px;
+    color: rgb(58, 58, 176);
+}
+
+.hide {
+    display: none;
+}
+
+.article1 p, .article2 p, .article3 p {
+    line-height: 25px;
+    padding: 10px 30px;
+}
+
+.btn, .btn2, .btn3{
+    font-size: 16px;
+    background-color: #01796f;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 20px;
+    border: 2px solid #004b49;
+    border-radius: 10px;
+    box-shadow: 3px 5px 11px gray;
+    float: right;
+}
+
+.btn:hover, .btn2:hover, .btn3:hover {
+    box-shadow: 3px 5px 11px black;
+    background-color: #218838;
+}
+
+.imageContainer, .imageContainer2, .imageContainer3 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    img{
+        height: 200px;
+        width: 340px;
+        object-fit: cover;
+        margin: 5px;
+        border: 1px solid rgb(173, 173, 226);
+        border-radius: 10px;
+    
+}
+.imageContainer img, .imageContainer2 img, .imageContainer3 img {
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: auto;
+}
+}
+
+.questionAndAnswer {
+    background:rgb(246, 244, 244);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 99%;
+    max-width: 1060px;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dcdada;
+    
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.questions  {
+    display: block;
+    width: 27%;
+    padding: 10px;
+    text-align: center;
+    background-color: #56a468;
+    color: white;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.questions:hover {
+    background-color: #218838;
+}
+
+#qaContainer {
+    margin-top: 20px;
+}
+
+.qaItem {
+    background: #e9ecef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.qaItem h3 {
+    margin: 0;
+}
+
+.deleteBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: #da0318;
+}

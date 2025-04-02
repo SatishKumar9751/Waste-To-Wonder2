@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#ic1 {
+    position: absolute;
+    top: 0;
+    border: 5px solid rgba(236, 217, 94, 0.624);
+    border-radius:50% ;
+    height: 70px;
+    background-color: rgba(236, 217, 94, 0.624);
+    left: 0;
+}
+
+#ic2 {
+    position: absolute;
+    top: 0;
+    border: 5px solid rgba(160, 156, 125, 0.806);
+    border-radius:50% ;
+    height: 70px;
+    right: 0;
+}
+
+/* Topest navigation bar */
+.navbar{
+    background-color: rgb(47, 43, 43);
+    border-radius: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+    margin: 10px auto;
+    width: 70%;
+    padding: 0 0;
+
+}
+
+.navbar ul{
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    float:left;
+    padding: 10px 1px 10px 1px;
+    list-style:none;
+}
+
+.navbar li a{
+    padding:10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.navbar li a:hover{
+    background-color: rgb(88, 87, 87);
+    border-radius: 5px;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 40%;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+select, input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff5e62;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e04347;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

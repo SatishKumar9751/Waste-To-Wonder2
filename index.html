@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="market_place.css">
+</head>
+<body>
+
+    <div class="images">
+        <img src="wasteIcon1.png" alt=""  class="ic" id="ic1">
+      
+        
+        <img src="wasteIcon2.png" alt="" class="ic float-end" id="ic2">
+      </div>
+
+    <!-- Top navigation bar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+               <li><a href="http://127.0.0.1:3000/market_place.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="http://127.0.0.1:3000/login.html">Logout</a></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- Hamburger button -->
+        <div class="hamburger">
+            <ul>
+                <li id="hamb"><button id="ham"><a href="http://127.0.0.1:3000/community.html">Waste Management</a></button></li>
+                <li id="hamb"><button id="ham"><a href="http://127.0.0.1:3000/community.html">Community</a></button></li>
+                
+                <li id="hamb"><button id="ham"><a href="http://127.0.0.1:3000/guidance.html">Guidance</a></button></li>
+                <li id="hamb" ><Button id="ham">Product Exchange</Button></li>
+                <li id="hamb"><button id="ham"><a href="http://127.0.0.1:3000/login.html">Logout</a></button></li>
+            </ul>
+        </div>
+
+        <nav class ="ham_nav">
+            <div class="menu"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <h1 id="buy">To sell or buy waste material</h1>
+        
+        <div class="categoryHeading">
+            <div class="selectCategory">
+                <div id="categoryId">
+                    
+                    <p id="displayCategory"><i>Select  your  product  category</i></p>
+                    <img src="dropDown.jfif" alt="" id="arrowIcon">
+                </div>
+                <ul id="list" class="hideAllCategory">
+                    <li class="options">
+                        <img src="PlasticWaste2.jfif" alt="">
+                        <p>Plastic Waste</p>
+                    </li>
+                    <li class="options">
+                        <img src="AgricultureWaste.jfif" alt="">
+                        <p>Agriculture Waste</p>
+                    </li>
+                    <li class="options">
+                        <img src="FoodWaste.jfif" alt="">
+                        <p>Food Waste</p>
+                    </li>
+                    <li class="options">
+                        <img src="ElectronicWaste.jfif" alt="">
+                        <p>Electronic Waste</p>
+                    </li>
+                    <li class="options">
+                        <img src="PaperCardboardWaste.jfif" alt="">
+                        <p>Paper & Cardboard Waste</p>
+                    </li>
+                    <li class="options">
+                        <img src="TextileWaste.jfif" alt="">
+                        <p>Textile Waste</p>
+                    </li>
+                    <li class="options">
+                        <img src="ConstructionWaste.jfif" alt="">
+                        <p>Construction & Demolition Waste</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+  
+        
+        <!--Javascript for hamburger-->
+        <script>
+            const menuBar = document.querySelector(".menu");
+            const yourCategory = document.querySelector(".hamburger");
+            menuBar.addEventListener("click", () => {
+                menuBar.classList.toggle("active");
+                yourCategory.classList.toggle("active");
+            })
+
+            <!--Javascript for Selectig a category-->
+            var categoryId = document.getElementById("categoryId");
+            var displayCategory = document.getElementById("displayCategory");
+            var options = document.getElementsByClassName("options");
+            var list = document.getElementById("list");
+            var arrowIcon = document.getElementById("arrowIcon");
+            categoryId.onclick = function(){
+                list.classList.toggle("hideAllCategory");
+                arrowIcon.classList.toggle("rotate");
+            }
+            for(option of options){
+                option.onclick = function(){
+                    displayCategory.innerHTML = this.textContent;
+                    list.classList.toggle("hideAllCategory");
+                    arrowIcon.classList.toggle("rotate");
+                }
+            }
+for (let option of options) {
+    option.onclick = function(){
+        let selectedCategory = this.textContent.trim();
+        localStorage.setItem("selectedCategory", selectedCategory);
+        
+        window.location.href = "market.html";
+    }
+}   
+        </script>
+</body>
+</html>

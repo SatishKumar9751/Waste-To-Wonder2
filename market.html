@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Page</title>
+    <link rel="stylesheet" href="market.css">
+</head>
+<body>
+  <div class="images">
+    <img src="wasteIcon1.png" alt=""  class="ic" id="ic1">
+    <img src="wasteIcon2.png" alt="" class="ic float-end" id="ic2">
+  </div>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:3000/market_place.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="http://127.0.0.1:3000/login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="category-heading"></div>
+
+    <div class="sell"><i>Are you want to sell any waste material!    
+    </div>
+    <div class="container">
+        <h1>Image Upload</h1>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="deleteImage">Delete Image</button>
+        <div class="image-container">
+            <img id="uploadedImage" alt="Uploaded Image will appear here">
+        </div>
+    </div>
+
+    <div class="reg">
+        <div class="register">
+            <form class="details">
+                <h2>Please submit these details</h2>
+                
+               <label for="" class="data"><input type="text" placeholder="Material name"class="inp" id="name" name="name" required></label>
+    
+               <br><label for="number" class="data"><br></ID:br><INPUT TYPE="text" placeholder="Quantity" class="inp" id="" name="" required ></label>
+    
+                <br><label for="" class="data"><br><INPUT TYPE="text" class="inp" id="" placeholder="Material condition" name="" required ></label>
+
+                <br> <label for="" class="data"><br><INPUT TYPE="text" class="inp" id="" placeholder="Location" name="" required ></label>
+
+                <br> <label for="" class="data"><br><INPUT TYPE="text" class="inp" id="" placeholder="Material compostion" name="" required ></label>
+
+                 <br> <label for="" class="data"><br><INPUT TYPE="date" class="inp" id="" placeholder="" name="" required ></label>
+
+                 <br> <label for="" class="data"><br><INPUT TYPE="number" class="inp" id="" placeholder="000.00 /-" name="" required ></label>
+
+                 <br> <label for="description"></label><br>
+                 <textarea name="description" id="desc" rows="5" cols="20" placeholder="Description about your material..."></textarea>
+                 
+                 <div class="submit">
+                    <button type="submit" id="sub">Submit</button>
+
+                 </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="buy"><br><i>Are you want to buy any waste material!    
+    </div>
+    
+    <div class="reg">
+        <div class="register">
+            <form class="details">
+                <h2>Please submit these details</h2>
+                
+               <label for="" class="data"><input type="text" placeholder="Material name"class="inp" id="name" name="name" required></label>
+    
+               <br><label for="number" class="data"><br></ID:br><INPUT TYPE="text" placeholder="Quantity" class="inp" id="" name="" required ></label>
+    
+                <br><label for="" class="data"><br><INPUT TYPE="text" class="inp" id="" placeholder="Material condition" name="" required ></label>
+
+                <br> <label for="" class="data"><br><INPUT TYPE="text" class="inp" id="" placeholder="Location" name="" required ></label>
+
+                <br> <label for="" class="data"><br><INPUT TYPE="text" class="inp" id="" placeholder="Material compostion" name="" required ></label>
+
+                 <br> <label for="" class="data"><br><INPUT TYPE="date" class="inp" id="" placeholder="" name="" required ></label>
+
+                 <br> <label for="" class="data"><br><INPUT TYPE="number" class="inp" id="" placeholder="000.00 /-" name="" required ></label>
+
+                 <br> <label for="description"></label><br>
+                 <textarea name="description" id="desc" rows="5" cols="20" placeholder="Description about your material..."></textarea>
+                 
+                 <div class="submit">
+                    <button type="submit" id="sub">Pay now</button>
+
+                 </div>
+            </form>
+        </div>
+    </div>
+                        
+    <script>       
+        let selectedCategory = localStorage.getItem("selectedCategory");
+        if (selectedCategory) {
+            let categoryHeading = document.getElementById("category-heading");
+            categoryHeading.textContent = "Selected Category: " + selectedCategory;
+        }
+
+const imageUpload = document.getElementById("imageUpload");
+const uploadedImage = document.getElementById("uploadedImage");
+const deleteImage = document.getElementById("deleteImage");
+
+window.onload = function() {
+    const storedImage = localStorage.getItem("uploadedImage");
+    if (storedImage) {
+        uploadedImage.src = storedImage;
+        uploadedImage.style.display = "block";
+    }
+};
+
+imageUpload.addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+        const base64Image = e.target.result;
+        localStorage.setItem("uploadedImage", base64Image);
+        uploadedImage.src = base64Image;
+        uploadedImage.style.display = "block";
+    };
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+});
+
+deleteImage.addEventListener("click", function() {
+    localStorage.removeItem("uploadedImage");
+    uploadedImage.src = "";
+    uploadedImage.style.display = "none";
+});
+
+    </script>
+</body>
+</html>

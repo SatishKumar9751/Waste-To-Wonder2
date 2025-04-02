@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login your account</title>
+    <link rel="stylesheet" href="mylogin.css">
+    <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Login your account</h2>
+        <hr>
+        <FORM>
+            <div class="formElement">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="formElement">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <p><input type="checkbox">Remember me
+            <a href="#">Forget Password</a></p>
+           
+            <BUTTON type="SUBMIT" id="btn"><a href="http://127.0.0.1:3000/market_place.html">login</a></BUTTON>
+            
+            <p>Don't have any account?
+                <a href="http://127.0.0.1:3000/login.html">Register</a>
+            </p>
+
+        </FORM>
+    </div>
+
+    
+    <script>
+        window.onload = function() {
+            alert("Login your registered account.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste to Wonder - Introduction</title>
+    <link rel="stylesheet" href="guidance.css">
+</head>
+<body>
+    <div class="images"></div>
+        <img src="wasteIcon1.png" alt=""  class="ic" id="ic1">
+      
+        
+        <img src="wasteIcon2.png" alt="" class="ic float-end" id="ic2">
+      </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+        +        <li><a href="http://127.0.0.1:3000/market_place.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="http://127.0.0.1:3000/login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    
+    <section id="intro">
+        <div class="container">
+            <h1>Welcome to Waste to Wonder</h1>
+            <p>Discover how everyday waste materials can be transformed into extraordinary and functional creations. Join us on a journey of creativity and sustainability!</p>
+            <button id="learnMoreBtn">Learn More</button>
+            <div id="details" class="hidden">
+                <div class="section">
+                    <h2>About Us</h2>
+                    <p>At Waste to Wonder, we are passionate about turning waste materials into beautiful and practical objects. Our mission is to promote sustainability through innovative design and to inspire others to see the potential in discarded materials.</p>
+                    <p>We collaborate with artists, designers, and communities to develop creative solutions that reduce waste and environmental impact. Through our projects and workshops, we aim to make recycling and upcycling accessible and exciting for everyone.</p>
+                </div>
+                <div class="section">
+                    <h2>Project Goals</h2>
+                    <ul>
+                        <li><strong>Minimize Waste:</strong> Convert waste materials into useful products, reducing the amount of waste that ends up in landfills.</li>
+                        <li><strong>Foster Creativity:</strong> Encourage creative thinking and problem-solving by repurposing materials in innovative ways.</li>
+                        <li><strong>Promote Sustainability:</strong> Advocate for sustainable design practices and educate the public on the benefits of recycling.</li>
+                        <li><strong>Community Engagement:</strong> Build a community of like-minded individuals who are passionate about environmental conservation and creative reuse.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Impact</h2>
+                    <p>Participating in Waste to Wonder not only helps the environment but also fosters a culture of sustainability and creativity. By reimagining waste materials, we reduce our ecological footprint and contribute to a cleaner planet.</p>
+                    <p>Our projects have reached various communities, educating them about sustainable practices and inspiring them to take action. Each creation is a step towards a more eco-friendly and imaginative world.</p>
+                </div>
+            </div>
+            <div id="tips" class="hidden">
+                <div class="section">
+                    <h2>Tips and Tricks</h2>
+                    <ul>
+                        <li><strong>Plan Your Project:</strong> Begin with a clear plan and design before starting. Sketch your ideas and list the materials you'll need.</li>
+                        <li><strong>Safety First:</strong> Always use appropriate safety gear, such as gloves and goggles, when working with waste materials to avoid injuries.</li>
+                        <li><strong>Get Creative:</strong> Explore different ways to repurpose materials. Experiment with new techniques and approaches to make unique designs.</li>
+                        <li><strong>Document Your Process:</strong> Take photos and notes during your project. This will help you improve your skills and share your work with others.</li>
+                        <li><strong>Engage with the Community:</strong> Join forums or social media groups related to upcycling and recycling. Share your ideas and get feedback from other enthusiasts.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const learnMoreBtn = document.getElementById('learnMoreBtn');
+            const details = document.getElementById('details');
+            const tips = document.getElementById('tips');
+            
+            learnMoreBtn.addEventListener('click', () => {
+                if (details.classList.contains('hidden')) {
+                    details.classList.remove('hidden');
+                    tips.classList.add('hidden');
+                    learnMoreBtn.textContent = "Show Tips and Tricks";
+                } else {
+                    details.classList.add('hidden');
+                    tips.classList.remove('hidden');
+                    learnMoreBtn.textContent = "Learn More";
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>

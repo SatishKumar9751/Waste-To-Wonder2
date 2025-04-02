@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cate.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="selector">
+            <div id="selectField">
+                <p id="selectText">Select your product category</p>
+                <img src="dropDown.jfif" alt="" id="arrowIcon">
+            </div>
+            <ul id="list" class="hide">
+                <li class="options">
+                    <img src="PlasticWaste2.jfif" alt="">
+                    <p>Plastic Waste</p>
+                </li>
+                <li class="options">
+                    <img src="AgricultureWaste.jfif" alt="">
+                    <p>Agriculture Waste</p>
+                </li>
+                <li class="options">
+                    <img src="FoodWaste.jfif" alt="">
+                    <p>Food Waste</p>
+                </li>
+                <li class="options">
+                    <img src="ElectronicWaste.jfif" alt="">
+                    <p>Electronic Waste</p>
+                </li>
+                <li class="options">
+                    <img src="PaperCardboardWaste.jfif" alt="">
+                    <p>Paper & Cardboard Waste</p>
+                </li>
+                <li class="options">
+                    <img src="TextileWaste.jfif" alt="">
+                    <p>Textile Waste</p>
+                </li>
+                <li class="options">
+                    <img src="ConstructionWaste.jfif" alt="">
+                    <p>Construction & Demolition Waste</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        var selectField = document.getElementById("selectField");
+        var selectText = document.getElementById("selectText");
+        var options = document.getElementsByClassName("options");
+        var list = document.getElementById("list");
+        var arrowIcon = document.getElementById("arrowIcon");
+        selectField.onclick = function(){
+            list.classList.toggle("hide");
+            arrowIcon.classList.toggle("rotate");
+        }
+        for(option of options){
+            option.onclick = function(){
+                selectText.innerHTML = this.textContent;
+                list.classList.toggle("hide");
+                arrowIcon.classList.toggle("rotate");
+            }
+        }
+    </script>
+</body>
+</html>

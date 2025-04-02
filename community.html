@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+    <div class="images"></div>
+        <img src="wasteIcon1.png" alt=""  class="ic" id="ic1">
+      
+        
+        <img src="wasteIcon2.png" alt="" class="ic float-end" id="ic2">
+    </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:3000/market_place.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--Resource sharing-->
+    <button>Resources</button>
+    <br><div class="read">Read articles:</div>
+    
+    <!-- Article 1 -->
+    <div class="article1">
+        <b>1. Waste management: Health impact and environmental challenges</b>
+        <p>
+            Waste can either be solid, liquid, or gases and each type has different methods of disposal and management. Waste management deals with all types of waste, including industrial, biological, household, municipal, organic, biomedical, radioactive wastes.
+            <span class="readable">...</span>
+            <span id="moreParagraphs1" class="hide">
+                In some cases, waste can pose a threat to human health. Health issues are associated with the entire process of waste management. Health issues can also arise indirectly or directly: directly through the handling of solid waste, and indirectly through the consumption of water, soil, and food. Waste is produced by human activity, for example, the extraction and processing of raw materials. Waste management is intended to reduce the adverse effects of waste on human health, the environment, planetary resources, and aesthetics. The aim of waste management is to reduce the dangerous effects of such waste on the environment and human health. A big part of waste management deals with municipal solid waste, which is created by industrial, commercial, and household activity.
+                Waste management practices are not the same across countries (developed and developing nations); regions (urban and rural areas), and residential and industrial sectors can all take different approaches.
+                <div class="imageContainer">
+                    <img src="firstImg.jpeg" alt="">
+                    <img src="secondImg.jpeg" alt="">
+                    <img src="thirdImg.jpeg" alt="">
+                </div>
+            </span>
+        </p>
+        <button class="btn" onclick="toggleReadMore('moreParagraphs1', this)">Read More</button>
+    </div>
+    
+    <!-- Article 2 -->
+    <div class="article2">
+        <b>2. The Use of Waste Materials in the Construction Industry</b>
+        <p>
+            Waste materials are a major environmental problem, which is a threat to the environment. It is important to reuse these materials and dispose of them. Waste can be used in the construction industry in two ways: by reusing (reuse components) and recycling (processing waste into raw materials used in the production of building materials). 
+            <span class="readable">...</span>
+            <span id="moreParagraphs2" class="hide">
+                The paper presents my own research using substrates resulting from the processing of waste: foam glass and high-impact polystyrene and the possibility of their use as modifiers composition of basic construction materials. Glass foam is made from glass cullet. It has many advantages, positive effect on the adsorption of sound and workability. Due to the spherical shape and low density it is used as an ultra-light filler. The second addition is High Impact Polystyrene (High Impact Polystyrene - HIPS for short) which is a butadiene rubber modified polystyrene. With the change amount of the rubber mechanical and physical properties of the material are also changed, for example, by increasing the toughness of HIPS. The article presents a critical review of the literature on changes in the composition of traditional building materials on the example of cellular concrete, cement and products of sand - lime. The paper presents my own research and detailed analysis of them.
+                <div class="imageContainer2">
+                    <img src="img1 of art2.webp" alt="">
+                    <img src="img2 of art2.jpg" alt="">
+                    <img src="img3 of art2.jfif" alt="">
+                </div>
+            </span>
+        </p>
+        <button class="btn2" onclick="toggleReadMore('moreParagraphs2', this)">Read More</button>
+    </div>
+
+
+    <!-- Article 3 -->
+    <div class="article3">
+        <b>3. Trends and Insights in Construction and Demolition Waste Management: A Bibliometric Analysis</b>
+        <p>
+            Construction and demolition waste treatment has become an increasingly pressing economic, social, and environmental concern across the world. This study employs a science mapping approach to provide a thorough and systematic examination of the literature on waste management research.
+            <span class="readable">...</span>
+            <span id="moreParagraphs3" class="hide">
+                This study identifies the most significant journals, authors, publications, keywords, and active countries using bibliometric and scientometric analysis. The search retrieved 895 publications from the Scopus database between 2001 and 2021. The findings reveal that the annual number of publications has risen from less than 15 in 2006 to more than 100 in 2020 and 2021. The results declare that the papers originated in 80 countries and were published in 213 journals. Review, urbanization, resource recovery, waste recycling, and environmental assessment are the top five keywords. Estimation and quantification, comprehensive analysis and assessment, environmental impacts, performance and behavior tests, management plan, diversion practices, and emerging technologies are the key emerging research topics. To identify research gaps and propose a framework for future research studies, an in-depth qualitative analysis is performed. This study serves as a multi-disciplinary reference for researchers and practitioners to relate current study areas to future trends by presenting a broad picture of the latest research in this field.
+                <div class="imageContainer3">
+                    <img src="constr1.jfif" alt="">
+                    <img src="constr2.jfif" alt="">
+                    <img src="constr3.jfif" alt="">
+                </div>
+            </span>
+        </p>
+        <button class="btn3" onclick="toggleReadMore('moreParagraphs3', this)">Read More</button>
+    </div>
+
+
+    <!--QA_Section-->
+    <div class="questionAndAnswer">
+        <h1>Ask a Question</h1>
+        <form id="questionForm">
+            <label for="question">Question:</label>
+            <textarea id="question" required></textarea>
+            <button type="submit" class="questions" id="ques">Submit Question</button>
+        </form>
+        
+        <div id="answerSection" style="display:none;">
+            <h2>Provide an Answer</h2>
+            <form id="answerForm">
+                <label for="answer">Answer:</label>
+                <textarea id="answer" required></textarea>
+                <button type="submit"  class="questions"  id="ans">Submit Answer</button>
+            </form>
+        </div>
+
+        <div id="qaContainer">
+
+        </div>
+    </div>
+   
+    <script>
+        function toggleReadMore(id, button) {
+            var hiddenText = document.getElementById(id);
+            if (hiddenText.classList.contains("hide")) {
+                hiddenText.classList.remove("hide");
+                button.innerHTML = "Read Less";
+            } else {
+                hiddenText.classList.add("hide");
+                button.innerHTML = "Read More";
+            }
+        }
+
+        function saveToLocalStorage() {
+            const qaItems = [];
+            document.querySelectorAll('.qaItem').forEach(item => {
+                const question = item.querySelector('p:nth-of-type(1)').textContent;
+                const answer = item.querySelector('p:nth-of-type(2)').textContent;
+                qaItems.push({ question, answer });
+            });
+            localStorage.setItem('qaItems', JSON.stringify(qaItems));
+        }
+        
+        
+        function loadFromLocalStorage() {
+            const qaItems = JSON.parse(localStorage.getItem('qaItems')) || [];
+            const qaContainer = document.getElementById('qaContainer');
+            
+            qaItems.forEach(item => {
+                const qaElement = document.createElement('div');
+                qaElement.className = 'qaItem';
+                qaElement.innerHTML = `
+                    <h3>Question:</h3>
+                    <p>${item.question}</p>
+                    <h3>Answer:</h3>
+                    <p>${item.answer}</p>
+                    <button class="deleteBtn">Delete</button>
+                `;
+                qaContainer.appendChild(qaElement);
+            });
+        }
+        
+        
+        document.getElementById('questionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const questionInput = document.getElementById('question');
+            const questionText = questionInput.value.trim();
+            
+            if (questionText) {
+                const answerSection = document.getElementById('answerSection');
+                answerSection.style.display = 'block';
+                window.currentQuestion = questionText;
+                questionInput.value = '';
+            }
+        });
+        document.getElementById('answerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const answerInput = document.getElementById('answer');
+            const answerText = answerInput.value.trim();
+            
+            if (answerText && window.currentQuestion) {
+                const qaContainer = document.getElementById('qaContainer');
+                
+                const qaItem = document.createElement('div');
+                qaItem.className = 'qaItem';
+                qaItem.innerHTML = `
+                    <h3>Question:</h3>
+                    <p>${window.currentQuestion}</p>
+                    <h3>Answer:</h3>
+                    <p>${answerText}</p>
+                    <button class="deleteBtn">Delete</button>
+                `;
+                
+                qaContainer.appendChild(qaItem);
+                saveToLocalStorage();
+                
+                answerInput.value = '';
+                document.getElementById('answerSection').style.display = 'none';
+                window.currentQuestion = null;
+            }
+        });
+        document.getElementById('qaContainer').addEventListener('click', function(event) {
+            if (event.target && event.target.classList.contains('deleteBtn')) {
+                event.target.parentElement.remove();
+                saveToLocalStorage();
+            }
+        });
+        window.onload = loadFromLocalStorage;
+        
+    </script>
+</body>
+</html>

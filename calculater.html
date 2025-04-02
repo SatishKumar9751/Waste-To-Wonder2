@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="calculater.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carbon Footprint Calculator</h1>
+        <p>Check how much carbon footprint your vehicle emits!</p>
+
+        <label for="vehicle">Choose your Vehicle:</label>
+        <select id="vehicle">
+            <option value="petrol">Petrol Car</option>
+            <option value="diesel">Diesel Car</option>
+            <option value="electric">Electric Car</option>
+        </select>
+
+        <label for="hours">Hours Driven:</label>
+        <input type="number" id="hours" min="1" placeholder="Enter hours driven">
+
+        <label for="ac">Did you use AC?</label>
+        <select id="ac">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="traffic">Traffic Condition:</label>
+        <select id="traffic">
+            <option value="low">Low</option>
+            <option value="moderate">Moderate</option>
+            <option value="high">High</option>
+        </select>
+
+        <button onclick="calculateFootprint()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <a href="dash.html" style="
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #0072ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+">⬅ Back to Home</a>
+
+
+    <script src="calculater.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Waste Calculator</title>
+    <link rel="stylesheet" href="pal.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>♻ Plastic Waste Calculator</h1>
+        <p>Estimate your plastic waste generation based on daily usage.</p>
+
+        <label for="bottles">Plastic Bottles Used Per Day:</label>
+        <input type="number" id="bottles" min="0" value="0">
+
+        <label for="bags">Plastic Bags Used Per Day:</label>
+        <input type="number" id="bags" min="0" value="0">
+
+        <label for="containers">Plastic Containers Used Per Day:</label>
+        <input type="number" id="containers" min="0" value="0">
+
+        <button onclick="calculatePlasticWaste()">Calculate Waste</button>
+
+        <h2 id="result"></h2>
+
+        <!-- 🔙 Home Button -->
+        <a href="dash.html" style="
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #0072ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: 0.3s;
+        ">⬅ Back to Home</a>
+    </div>
+
+    <script src="pal.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Pollution Index Calculator</title>
+    <link rel="stylesheet" href="air.css">
+</head>
+<body>
+
+    <div class="images">
+        <img src="wasteIcon1.png" alt=""  class="ic" id="ic1">
+      
+        
+        <img src="wasteIcon2.png" alt="" class="ic float-end" id="ic2">
+      </div>
+
+    <!-- Top navigation bar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+               <li><a href="http://127.0.0.1:3000/market_place.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="http://127.0.0.1:3000/login.html">Logout</a></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <h1>Air Pollution Index Calculator</h1>
+        <label for="city">Select Your City:</label>
+        <select id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Patna">Patna</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+
+        <label for="hours">Hours Spent Outside:</label>
+        <input type="number" id="hours" min="1" max="24" placeholder="Enter hours">
+
+        <button onclick="calculatePollution()">Calculate Impact</button>
+
+        <div id="result"></div>
+    </div>
+
+    <a href="dash.html" style="
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #0072ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+">⬅ Back to Home</a>
+
+
+    <script src="air.js"></script>
+</body>
+</html>
